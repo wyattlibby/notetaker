@@ -26,6 +26,9 @@ app.get("/api/notes", (req, res) => {
 });
 app.post("/api/notes", (req, res) => {
 	//add a note from attached JSON
+    const notes = readData();
+    const newNote = req.body;
+    newNote.id = Date.now();
   	
 });
 app.delete("/api/notes/:id", (req, res) => {
