@@ -19,3 +19,16 @@ app.get("/notes", (req, res) => {
 app.get("/api/notes", (req, res) => {
   return res.sendFile(path.json(__dirname, "db/db.json"));
 });
+
+app.get("/api/notes", (req, res) => {
+	//return all notes as JSON
+  	
+});
+app.post("/api/notes", (req, res) => {
+	//add a note from attached JSON
+  	
+});
+app.delete("/api/notes/:id", (req, res) => {
+	//delete note matching id
+  	
+});
