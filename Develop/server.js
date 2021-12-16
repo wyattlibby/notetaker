@@ -32,3 +32,8 @@ app.delete("/api/notes/:id", (req, res) => {
 	//delete note matching id
   	
 });
+
+app.listen(PORT, function () {
+    console.log("Express is listening on port", PORT);
+  });
+
